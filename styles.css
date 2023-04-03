@@ -1,0 +1,242 @@
+:root {
+    --color-orange: hsl(39, 100%, 50%);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding-block: 32px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-block-end: 120px;
+}
+
+.header__logo {
+}
+
+.header__nav {
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 32px;
+    list-style-type: none;
+}
+
+.header__link {
+    color: hsl(0, 36%, 10%);
+    text-decoration: none;
+}
+
+.header__link--active {
+    color: var(--color-orange);
+}
+
+.header__link:hover {
+    color: var(--color-orange);
+}
+
+.header__login-button {
+    background-color: hsl(39, 97%, 84%);
+    border: none;
+    border-radius: 32px;
+    height: 44px;
+    width: 96px;
+}
+
+.main {
+    display: flex;
+}
+
+.main__left {
+    max-width: 580px;
+}
+
+.title {
+    color: hsl(355, 34%, 8%);
+    font-size: 48px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.title span {
+    color: var(--color-orange);
+    text-decoration: underline var(--color-orange);
+}
+
+.paragraph {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+.main__right {
+    margin-inline-start: auto;
+    position: relative;
+}
+
+.main__right img {
+    inset-block-start: -96px;
+    position: relative;
+    /* z-index: 99999; */
+}
+
+.balazo {
+    background-color: var(--color-orange);
+    border-bottom-left-radius: 250px;
+    border-top-left-radius: 250px;
+    height: 460px;
+    inset-block-start: -528px;
+    inset-inline-end: -1012px;
+    position: absolute;
+    rotate: -45deg;
+    width: 1600px;
+    z-index: -1;
+}
+
+.main__buttons {
+    align-items: center;
+    column-gap: 24px;
+    display: flex;
+    margin-block-start: 64px;
+}
+
+.main__book-button {
+    background-color: var(--color-orange);
+    color: white;
+    border-radius: 12px;
+    height: 46px;
+    padding-inline: 28px;
+}
+
+.play-button {
+    align-items: center;
+    column-gap: 4px;
+    display: flex;
+}
+
+.play-button__icon {
+    align-items: center;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: relative;
+    width: 30px;
+}
+
+.play-button__icon:before {
+    border-color: white transparent transparent white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    content: ' ';
+    display: block;
+    height: 26px;
+    inset-block-start: 2px;
+    inset-inline-start: 2px;
+    position: absolute;
+    rotate: -45deg;
+    width: 26px;
+}
+
+.triangles {
+    height: 16px;
+    position: relative;
+    width: 16px;
+}
+
+.triangle {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    display: block;
+    inset-block-start: 0;
+    inset-inline-start: 4px;
+    position: absolute;
+}
+
+.triangle--black {
+    background-color: hsl(348, 11%, 19%);
+    height: inherit;
+    width: inherit;
+}
+
+.triangle--white {
+    background-color: white;
+    height: 12px;
+    inset-block-start: 2px;
+    inset-inline-start: 5px;
+    width: 12px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: hsl(37, 82%, 92%);
+    border: 1px solid var(--color-orange);
+    border-radius: 12px;
+    padding: 16px 10px 12px;
+    width: 320px;
+}
+
+.card__information {
+    align-items: center;
+    display: flex;
+    column-gap: 32px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card__text-gray {
+    color: hsl(41, 10%, 58%);
+}
+
+.card__text-large {
+    color: hsl(49, 6%, 18%);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card__button {
+    background-color: var(--color-orange);
+    border-radius: 12px;
+    color: white;
+    display: block;
+    height: 46px;
+    margin-block-start: 20px;
+    margin-inline: auto;
+    padding-inline-end: 40px;
+    padding-inline-start: 28px;
+}
